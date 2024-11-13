@@ -119,7 +119,7 @@ window {
   spacing: 10;
 }
 #element-text {
-  margin: 5 0 0 0;
+  margin: 3 0 0 0;
 }
 #element.normal.normal {
   background-color: @view-bg;
