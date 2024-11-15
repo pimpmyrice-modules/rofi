@@ -5,8 +5,8 @@ configuration {
 }
 
 window {
-  width: {{350+padding.h*2}}px;
-  height: {{450+padding.v*2}}px;
+  width: {{350+padding.x*2}}px;
+  height: {{450+padding.y*2}}px;
 }
 
 * {
@@ -59,7 +59,7 @@ window {
 }
 #mainbox {
   border:  0;
-  padding: {{padding.v}} {{padding.h}} {{padding.v}} {{padding.h}};
+  padding: {{padding.y}} {{padding.x}} {{padding.y}} {{padding.x}};
   margin: 0;
   spacing: 0;
 }
@@ -68,7 +68,7 @@ window {
   text-color: @input-fg;
   children:   [ prompt,textbox-prompt-colon,entry,case-indicator ];
   spacing:    0;
-  padding: {{padding.v//2}} {{padding.h//2}} {{padding.v//2}} {{padding.h//2}};
+  padding: {{padding.y//2}} {{padding.x//2}} {{padding.y//2}} {{padding.x//2}};
   border-radius: {{border.radius}};
 }
 #prompt {
@@ -114,7 +114,7 @@ window {
 }
 #element {
   border:  0;
-  padding: {{padding.v//3}} {{padding.h//3}} {{padding.v//3}} {{padding.h//3}};
+  padding: {{padding.y//3}} {{padding.x//3}} {{padding.y//3}} {{padding.x//3}};
   border-radius: {{border.radius}};
   spacing: 10;
 }
