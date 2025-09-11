@@ -1,6 +1,6 @@
 configuration {
   modi: "drun,run,ssh";
-  font: "{{font.normal.family}} {{font.normal.size-4}}";
+  font: "{{font.normal.family}} {{font.normal.style}} {{font.normal.size-4}}";
   show-icons: true;
 }
 
@@ -80,8 +80,8 @@ window {
   background-color: @input-bg;
   text-color: @input-fg;
   spacing:    0;
-  placeholder: "type to filter";
-  placeholder-color: {{term.color8}};
+  placeholder: "";
+  placeholder-color: {{input.bg.contrasting().adjusted(sat="-30")}};
 }
 #case-indicator {
   background-color: @input-bg;
@@ -110,7 +110,7 @@ window {
   fixed-height: 0;
   spacing:      {{gaps.inner//3}};
   padding: 0;
-  margin: {{10 + gaps.inner}} 0 0 0;
+  margin: {{10 + gaps.inner//3}} 0 0 0;
 }
 #element {
   border:  0;
